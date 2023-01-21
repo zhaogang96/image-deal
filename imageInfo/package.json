@@ -1,6 +1,6 @@
 {
 	"name": "@imagedeal/imageinfo",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "get image info",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.mjs",
@@ -16,7 +16,7 @@
 		"build:cjs": "esbuild index.js --bundle --format=cjs --minify --outdir=dist --entry-names=index.cjs",
 		"build:iife": "esbuild index.js --bundle --format=iife --global-name=imageInfo --minify --outdir=dist",
 		"build": "npm run build:esm & npm run build:cjs & npm run build:iife",
-		"publish": "npm run publish --access=public"
+		"publish": "npm publish --access=public"
 	},
 	"files": [
 		"dist/*"
