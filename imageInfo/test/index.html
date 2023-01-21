@@ -9,13 +9,13 @@
 	<body>
 		<input type="file" id="choose" />
 		<img id="res" />
-		<script src="./index.js"></script>
+		<script src="../dist/index.js"></script>
 		<script>
 			const el = document.getElementById("choose");
 			el.addEventListener("change", e => {
 				const file = e.target.files[0];
 				console.log(file);
-				getImgInfo(file, console.log);
+				window.imageDeal.getImgInfo(file, console.log);
 			});
 		</script>
 	</body>

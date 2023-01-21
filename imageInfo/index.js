@@ -62,7 +62,7 @@ function getJPEGInfo(unit8Array) {
 	}
 }
 
-function getImgInfo(file, cb) {
+export function getImgInfo(file, cb) {
 	const reader = new FileReader();
 	reader.onload = res => {
 		let info = {};
