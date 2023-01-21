@@ -1,9 +1,9 @@
 {
-	"name": "imageinfo",
+	"name": "@imagedeal/imageinfo",
 	"version": "1.0.0",
 	"description": "get image info",
 	"main": "dist/index.cjs.js",
-	"module": "dist/index.esm.js",
+	"module": "dist/index.esm.mjs",
 	"keywords": [
 		"image",
 		"image info",
@@ -15,12 +15,13 @@
 		"build:esm": "esbuild index.js --bundle --format=esm --minify --outdir=dist --entry-names=index.esm --out-extension:.js=.mjs",
 		"build:cjs": "esbuild index.js --bundle --format=cjs --minify --outdir=dist --entry-names=index.cjs",
 		"build:iife": "esbuild index.js --bundle --format=iife --global-name=imageInfo --minify --outdir=dist",
-		"build": "npm run build:esm & npm run build:cjs & npm run build:iife"
+		"build": "npm run build:esm & npm run build:cjs & npm run build:iife",
+		"publish": "npm run publish --access=public"
 	},
 	"files": [
 		"dist/*"
 	],
-	"author": "zhaogang",
+	"author": "zhaogang9662",
 	"license": "ISC",
 	"devDependencies": {
 		"esbuild": "^0.17.3"
